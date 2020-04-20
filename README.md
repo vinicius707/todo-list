@@ -1,8 +1,8 @@
 # todo-list
 
-*Criar projeto
-*Usar Materials!
-*Definir componentes
+Criar projeto
+Usar Materials
+Definir componentes
 
 Estrutura do Projeto:
 
