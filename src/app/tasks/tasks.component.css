@@ -1,0 +1,40 @@
+.tasks-content{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    margin-top: 10%;
+    margin-left: 25%;
+    height: 50%;
+    width: 50%;
+    /* background-color: #00acdb; */
+    font-size: 4vh;
+}
+
+.todo-content{
+    position: relative;
+    background-color: rgb(123, 212, 123);
+    margin: 20px auto;
+    border-style: solid;
+    border-radius: 20px;
+    
+    
+    padding: 15%;
+}
+
+.doing-content{
+    background-color: rgb(238, 238, 115);
+    margin: 20px auto;
+    border-style: solid;
+    border-radius: 20px;
+
+    padding: 15%;
+}
+
+.done-content{
+    background-color: rgb(206, 105, 87);
+    margin: 20px auto;
+    border-style: solid;
+    border-radius: 20px;
+
+    padding: 15%;
+}
