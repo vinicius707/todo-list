@@ -1,18 +1,69 @@
-.header {
-  width: 100%;
+h1 {
+  width: 15vw;
+  margin: 0 auto;
   text-align: center;
+  justify-content: center;
+}
+
+.card {
+  margin: 0 auto;
+  width: 15vw;
+  text-align: center;
+  justify-content: center;
 }
 
 .content {
   width: 15vw;
   margin: 0 auto;
-  /* text-align: center; */
+  text-align: center;
   justify-content: center;
 
 }
 
+label[for='toggle-all'] {
+	display: none;
+}
 
+.toggle-all {
+	position: absolute;
+	top: -55px;
+	left: -12px;
+	width: 60px;
+	height: 34px;
+	text-align: center;
+}
 
+.toggle-all:before {
+	content: '❯';
+	font-size: 22px;
+	color: #e6e6e6;
+	padding: 10px 27px 10px 27px;
+}
 
+.toggle-all:checked:before {
+	color: #737373;
+}
 
+.todo-list {
+	margin: 0;
+	padding: 0;
+	list-style: none;
+}
 
+.todo-list li {
+	position: relative;
+	font-size: 20px;
+
+}
+
+.todo-list li label {
+	word-break: break-all;
+	display: block;
+	line-height: 1.2;
+
+}
+
+.todo-list li.completed label {
+	color: #d9d9d9;
+	text-decoration: line-through;
+}

@@ -1,20 +1,25 @@
-<header class="header">
-  <h1>To Dos</h1>
-  <input class="new-todo" placeholder="O que precisa ser feito?" autofocus="" [(ngModel)]="newTodo.title" (keyup.enter)="addTodo()">
-</header>
+<mat-toolbar class="toolbar">
+  <span>To-do List</span>
+</mat-toolbar>
 
-<div class="content" *ngIf="todos.length > 0">
-  <ul class="todo-list">
-    <li *ngFor="let todo of todos" [class.completed]="todo.complete">
-      <div class="view">
-        <input class="toggle" type="checkbox" (click)="toggleTodoComplete(todo)" [checked]="todo.complete">
-        <label>{{todo.title}}</label>
-        <button class="destroy" (click)="removeTodo(todo)"></button>
-      </div>
-    </li>
-  </ul>
-</div>
+<h1>Afazeres</h1>
+<mat-card class="card">
+  <mat-form-field class="input-field">
+   <mat-label>O que precisa ser feito?</mat-label>
+    <input matInput class="todo-input" [(ngModel)]="newTodo.title" (keyup.enter)="addTodo()">
+  </mat-form-field>
 
-<!-- <footer class="footer" *ngIf="todos.length > 0">
-  <span class="todo-count"><strong>{{todos.length}}</strong> {{todos.length == 1 ? 'atividade' : 'atividades'}} restando</span>
-</footer> -->
+
+  <div class="content" *ngIf="todos.length > 0">
+    <ul class="todo-list">
+      <li *ngFor="let todo of todos" [class.completed]="todo.complete">
+        <div class="view">
+          <input class="toggle" type="checkbox" (click)="toggleTodoComplete(todo)" [checked]="todo.complete">
+          <label>{{todo.title}}</label>
+          <button class="destroy" (click)="removeTodo(todo)"></button>
+        </div>
+      </li>
+    </ul>
+  </div>
+</mat-card>
+
