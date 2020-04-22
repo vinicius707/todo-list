@@ -9,7 +9,7 @@ import { TodoDataService } from '../todo-data.service';
   styleUrls: ['./tasks.component.css'],
   providers: [TodoDataService]
 })
-export class TasksComponent implements OnInit {
+export class TasksComponent {
 
   newTodo:Todo = new Todo();
 
@@ -32,9 +32,6 @@ export class TasksComponent implements OnInit {
 
   get todos(){
     return this.todoDataService.getAllTodos();
-  }
-
-  ngOnInit(): void {
   }
 
 }

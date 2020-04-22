@@ -3,9 +3,10 @@ import { NgModule } from '@angular/core';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
-import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+
+
 import { TasksComponent } from './tasks/tasks.component';
-import { FormsModule } from '@angular/forms';
+import { MaterialModule } from './material/material.module'
 
 
 @NgModule({
@@ -16,8 +17,8 @@ import { FormsModule } from '@angular/forms';
   imports: [
     BrowserModule,
     AppRoutingModule,
-    BrowserAnimationsModule,
-    FormsModule
+    MaterialModule
+
   ],
   providers: [],
   bootstrap: [AppComponent]
