@@ -1,2 +1,18 @@
+.header {
+  width: 100%;
+  text-align: center;
+}
+
+.content {
+  width: 15vw;
+  margin: 0 auto;
+  /* text-align: center; */
+  justify-content: center;
+
+}
+
+
+
+
 
 
