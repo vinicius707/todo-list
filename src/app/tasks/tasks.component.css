@@ -1,11 +1,11 @@
-h1 {
+.mat-display-3 {
   width: 15vw;
-  margin: 10px auto;
+  margin: 15px auto;
   text-align: center;
 }
 
 .card {
-  margin: 20px auto 50px auto;
+  margin: 25px auto 50px auto;
   width: 15vw;
   text-align: center;
   justify-content: center;
