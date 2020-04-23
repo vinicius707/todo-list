@@ -12,6 +12,8 @@ import { TodoDataService } from '../todo-data.service';
 export class TasksComponent {
 
   newTodo:Todo = new Todo();
+  toggle = true;
+  status = 'Enable';
 
   constructor(private todoDataService: TodoDataService){
 
@@ -34,4 +36,8 @@ export class TasksComponent {
     return this.todoDataService.getAllTodos();
   }
 
+  enableDisableRule(){
+    this.toggle = !this.toggle;
+    this.status = this.toggle ? 'Enable' : 'Disable';
+  }
 }

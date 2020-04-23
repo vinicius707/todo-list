@@ -15,12 +15,18 @@
     <p class="todo-list">
       <mat-card class="new-card" *ngFor="let todo of todos" [class.completed]="todo.complete">
         <div class="view">
-          <!-- <input type="hidden" class="toggle" type="checkbox" (click)="toggleTodoComplete(todo)" [checked]="todo.complete"> -->
-          <label class="label-todo" >{{todo.title}}</label>
-            <button mat-mini-fab color="primary" (click)="removeTodo(todo)" aria-label="Example icon button with a delete icon">
+
+          <mat-slide-toggle  class="checked-box" color ="warn" (click)="toggleTodoComplete(todo)" [checked]="todo.complete"></mat-slide-toggle>
+          <!-- <button
+          class="teste"
+          (click)="enableDisableRule()"
+          [ngClass]="{'undone' : toggle, 'done' : !toggle}">
+          </button> -->
+
+          <label id="teste" class="label-todo" >{{todo.title}}</label>
+            <button class="toggle-complete" mat-mini-fab color="primary" (click)="removeTodo(todo)" aria-label="Example icon button with a delete icon">
               <mat-icon>delete</mat-icon>
             </button>
-          <!-- <button class="destroy" (click)="removeTodo(todo)"></button> -->
         </div>
       </mat-card>
     </p>
