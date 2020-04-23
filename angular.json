@@ -123,5 +123,8 @@
       }
     }
   },
-  "defaultProject": "todo-magic"
+  "defaultProject": "todo-magic",
+  "cli": {
+    "analytics": "db57bf65-a55e-49d6-9f5c-0cf58cb9aa65"
+  }
 }

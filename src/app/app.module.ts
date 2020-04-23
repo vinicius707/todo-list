@@ -6,7 +6,8 @@ import { AppComponent } from './app.component';
 
 
 import { TasksComponent } from './tasks/tasks.component';
-import { MaterialModule } from './material/material.module'
+import { MaterialModule } from './material/material.module';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations'
 
 
 @NgModule({
@@ -17,7 +18,8 @@ import { MaterialModule } from './material/material.module'
   imports: [
     BrowserModule,
     AppRoutingModule,
-    MaterialModule
+    MaterialModule,
+    BrowserAnimationsModule
 
   ],
   providers: [],
