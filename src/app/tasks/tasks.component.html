@@ -1,7 +1,3 @@
-<!-- <mat-toolbar class="toolbar">
-  <span>To-do List</span>
-</mat-toolbar> -->
-
 <div class="mat-display-3">To-do List</div>
 <mat-card class="card">
   <mat-form-field class="input-field">
@@ -10,7 +6,6 @@
   </mat-form-field>
 </mat-card>
 
-<!-- <mat-card class="cards"> -->
   <div class="content" *ngIf="todos.length > 0">
     <p class="todo-list">
       <mat-card class="new-card" *ngFor="let todo of todos" [class.completed]="todo.complete">
@@ -31,4 +26,3 @@
       </mat-card>
     </p>
   </div>
-<!-- </mat-card> -->
