@@ -1,0 +1,9 @@
+{
+    "usuario": "pedro@email.com.br",
+    "cartoes": [
+      {
+          "conteudo": "Preparar a aula", 
+          "cor": "rgb(118, 239, 64)"
+        }
+    ]
+  }

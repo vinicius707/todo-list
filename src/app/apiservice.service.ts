@@ -11,13 +11,13 @@ export class ApiserviceService {
   constructor(private http: HttpClient) { }
 
   getResult(){
-    return this.http.get(this.apiUrl + "/carregar")
+    return this.http.get(this.apiUrl + "carregar")
   }
 
   // postResult(){
   //   return this.http.post(
-  //     this.apiUrl + "/salvar",
-  //     task)
+  //     this.apiUrl + "salvar",
+  //     body{ },)
   // }
 
 }
