@@ -12,6 +12,7 @@ export class ApiserviceService {
 
   getResult(){
     return this.http.get(this.apiUrl + "carregar")
+    console.log("Aqui")
   }
 
   // postResult(){
