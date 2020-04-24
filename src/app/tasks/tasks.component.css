@@ -15,8 +15,7 @@ nav {
   height: 70px;
   padding: 20px;
   font-size: 25px;
-  color: #fff;
-  background-color: #ab0232;
+  color:#000;
 }
   nav ul li {
       display: inline;
