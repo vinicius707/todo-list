@@ -18,3 +18,14 @@ Consumir api
 
 Tratar dados da API
 
+
+Estrutura do Projeto:
+
+Quadro>Colunas>Blocos
+
+3 Colunas (A fazer - Em andamento - concluído)
+
+
+Inspirações:
+
+Trello
