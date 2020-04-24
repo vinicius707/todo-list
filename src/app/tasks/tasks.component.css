@@ -102,12 +102,14 @@ button.mat-focus-indicator.toggle-post.mat-mini-fab.mat-button-base.mat-primary 
 .done{
   margin: 0 10px;
   font-size:20px;
-  background-color: #9ee083;
+  background-color:brown;
+  color: aliceblue;
   text-decoration: line-through;
 }
 
 .undone{
   margin: 0 10px;
-  color:black;
+  color:gray;
   font-size: 20px;
+  text-decoration: line-through;
 }

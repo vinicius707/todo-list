@@ -11,7 +11,12 @@ export class ApiserviceService {
   private baseUrl = 'https://ceep.herokuapp.com/cartoes/carregar/?usuario=pedro@email.com.br'
 
   getResult(){
+<<<<<<< HEAD
     return this.apiUrl.get(this.apiUrl + "carregar")
+=======
+    return this.http.get(this.apiUrl + "carregar")
+    console.log("Aqui")
+>>>>>>> 3e471c089556cfb3bd4ba56850cb069e8aedd4b5
   }
 
   // postResult(){
