@@ -25,11 +25,12 @@
           <mat-icon>check</mat-icon>
           </button>
          
-
           <label id="teste" class="label-todo"> {{todo.title}}</label>
-            <button class="toggle-complete" mat-mini-fab color="primary" (click)="removeTodo(todo)" aria-label="Example icon button with a delete icon">
+            <button class="toggle-complete" mat-mini-fab color="primary" (click)="removeTodo(todo)">
               <mat-icon>delete</mat-icon>
             </button>
+
+           <button class="toggle-post" mat-mini-fab color="primary"><mat-icon>cloud_download</mat-icon></button> 
         </div>
       </mat-card>
     </p>

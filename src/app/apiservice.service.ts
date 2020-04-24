@@ -6,12 +6,12 @@ import { HttpClient } from '@angular/common/http';
 })
 export class ApiserviceService {
 
-  apiUrl = "https://ceep.herokuapp.com/cartoes/";
+  constructor(private apiUrl: HttpClient) {}
 
-  constructor(private http: HttpClient) { }
+  private baseUrl = 'https://ceep.herokuapp.com/cartoes/carregar/?usuario=pedro@email.com.br'
 
   getResult(){
-    return this.http.get(this.apiUrl + "carregar")
+    return this.apiUrl.get(this.apiUrl + "carregar")
   }
 
   // postResult(){

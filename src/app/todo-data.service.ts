@@ -1,5 +1,6 @@
 import { Injectable } from '@angular/core';
 import { Todo } from './todo';
+import { HttpClient } from '@angular/common/http';
 
 @Injectable({
   providedIn: 'root'
@@ -7,14 +8,13 @@ import { Todo } from './todo';
 
 export class TodoDataService {
 
-
   //contador de ids
   lastId: number = 0;
 
   // Array de To dos
   todos: Todo[] = [];
 
-  constructor() { }
+  constructor() {}
 
 
    addTodo(todo: Todo): TodoDataService {

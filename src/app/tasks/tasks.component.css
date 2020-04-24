@@ -51,6 +51,13 @@ button.mat-focus-indicator.toggle-complete.mat-mini-fab.mat-button-base.mat-prim
     background-color: brown;
 }
 
+button.mat-focus-indicator.toggle-post.mat-mini-fab.mat-button-base.mat-primary {
+  background-color: brown;
+}
+
+.toggle-post{
+  margin-left: 10px;
+}
 
 .new-card{
  /* border: solid; */
