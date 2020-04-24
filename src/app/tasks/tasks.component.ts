@@ -24,8 +24,8 @@ export class TasksComponent {
     this.newTodo = new Todo();
   }
 
-  toggleTodoComplete(todo) {
-    this.todoDataService.toggleTodoComplete(todo);
+  todoComplete(todo) {
+    this.todoDataService.todoComplete(todo);
   }
 
   removeTodo(todo){

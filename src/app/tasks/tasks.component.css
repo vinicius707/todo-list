@@ -10,6 +10,22 @@
   text-align: center;
   justify-content: center;
 }
+
+.mat-card:not([class*=mat-elevation-z]) {
+    box-shadow: 0px 2px 10px 1px rgba(0, 0, 0, 0.2), 0px 1px 1px 0px rgba(0, 0, 0, 0.14), 0px 1px 3px 0px rgba(0, 0, 0, 0.12);
+}
+
+::ng-deep .mat-checkbox-checked .mat-checkbox-background, .mat-checkbox-indeterminate .mat-checkbox-background {
+  background-color: brown !important;
+}
+
+::ng-deep .mat-checkbox:not(.mat-checkbox-disabled) .mat-checkbox-ripple .mat-ripple-element {
+  background-color: brown !important;
+}
+
+button.mat-focus-indicator.toggle-complete.mat-mini-fab.mat-button-base.mat-primary {
+    background-color: brown;
+}
  
 
 .new-card{
@@ -35,7 +51,6 @@
 
 .todo-list div {
 	font-size: 20px;
-
 }
 
 .todo-list div label {
@@ -43,7 +58,7 @@
 	line-height: 1.2;
 }
 
-.toggleTodoComplete div  {
+.todoComplete div  {
 	color: #d9d9d9;
 	text-decoration: line-through;
 }
@@ -63,45 +78,3 @@
     color:black;
     font-size: 20px;
 }
-/* -------------------------- */
-/* .toggle[for='toggle-all'] {
-    display: none;
-}
-
-.toggle-all {
-    position: absolute;
-    top: -55px;
-    left: -12px;
-    width: 60px;
-    height: 34px;
-    text-align: center;
-    border: none; /* Mobile Safari */
-
-/*
-.toggle-all:before {
-    content: '❯';
-    font-size: 22px;
-    color: #e6e6e6;
-    padding: 10px 27px 10px 27px;
-}
-
-.toggle-all:checked:before {
-    color: #737373;
-}
-
-.todo-list div .toggle {
-    text-align: center;
-    height: auto;
-    position: absolute;
-    top: 0;
-    bottom: 0;
-    margin: auto 0;
-}
-
-.todo-list div .toggle:after {
-    content: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="-10 -18 100 135"><circle cx="50" cy="50" r="50" fill="none" stroke="#ededed" stroke-width="3"/></svg>');
-}
-
-.todo-list div .toggle:checked:after {
-    content: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="-10 -18 100 135"><circle cx="50" cy="50" r="50" fill="none" stroke="#bddad5" stroke-width="3"/><path fill="#5dc2af" d="M72 25L42 71 27 56l-4 4 20 20 34-52z"/></svg>');
-} */
